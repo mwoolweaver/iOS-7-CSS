@@ -1,11 +1,9 @@
 # Basic iOS 7 CSS
-Basic, simple, semantic, and less than 2.2kb (minified and gzipped).
+Basic, simple, semantic, and small (5.1 KB minified and gzipped).
 
 Integrate it with your project easily with [Bower](https://bower.io/): `bower install iOS-7-CSS`
 
-Live example: [cydia.hbang.ws](https://cydia.hbang.ws/depiction/ws.hbang.typestatus/)
-
-Licensed under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html). UI design is copyright of Apple Inc.
+Live example: [cydia.hbang.ws](https://cydia.hbang.ws/depiction/ws.hbang.typestatus2/)
 
 ## Screenshots
 ![Screenshot 1](https://i.imgur.com/XOKfDs3.png) &nbsp; ![Screenshot 2](https://i.imgur.com/5qAYSyl.png)
@@ -59,6 +57,7 @@ Licensed under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.
 
 Note that this has changed since version 1.x. Buttons must now be specified with `role="button"`; footers must be specified with `role="footer"`. Headers *should* use `role="header"`, but the styling is still applied to `<h2>`.
 
+<<<<<<< HEAD
 ## Building from SASS
 
 Building from SASS is easy once you get off your feet by setting them up. All command below should be run in the project directory.
@@ -91,3 +90,34 @@ gulp
 ```
 
 This will create the stylesheet as a minified CSS file at "ios7.min.css". It will also include a .map file for helpful debugging.
+=======
+## Installation
+### The easy way:
+Just [download this repo](https://github.com/hbang/iOS-7-CSS/archive/master.zip) and copy `ios7.min.css` and `ios7.min.js` to your website.
+
+### The hard way:
+1. Clone the repo.  
+   ```bash
+   git clone https://github.com/hbang/iOS-7-CSS.git
+   cd iOS-7-CSS
+   ```
+2. Install node, npm, and Bower if you don’t already have them installed. For example, on macOS:  
+   ```bash
+   brew install node
+   npm install -g bower
+   ```
+3. Install the dependencies.  
+   ```bash
+   npm install
+   npm install -g gulp-cli
+   bower install
+   ```
+4. Whenever you want to compile the CSS and JS, run Gulp.  
+   ```bash
+   gulp
+   ```
+
+
+## License
+Licensed under the Apache License, version 2.0. Refer to [LICENSE.md](LICENSE.md).
+>>>>>>> 1b17f42faa0b1c29995eb62c17f1a5b6761dbd3a
